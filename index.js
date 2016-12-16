@@ -15,8 +15,6 @@ var db = fireapp.database();
 var ref = db.ref();
 var masternodesRef = ref.child("masternodes");
 
-masternodesRef.remove();
-
 var host = process.env.RPC_HOST      || "localhost";
 var port = process.env.RPC_PORT      || 59273;
 var username = process.env.RPC_USER  || 'user';
